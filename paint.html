@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="./thirdparty/bootstrap.min.css" rel="stylesheet">
+		<link href="./style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+				<select id="shape">
+					<option value="triangle">Triangle</option>
+					<option value="rectangle">Rectangle</option>
+					<option value="line">Line</option>
+					<option value="circle">Circle</option>
+					<option value="basic">Basic</option>
+					<option value="polygon">Polygon</option>
+				</select>
+				<input type="number" value="5" min="3" max="100" id="sides">
+				<input type="color" id="color" value="#000000">
+				<input type="color" id="bgcolor" value="#ffffff" onchange="changeBackground()">
+				<input type="checkbox" id="fill" text="fill">
+				<label>Fill</label>
+				<button id="pop">Pop</button>
+				<button id="clear">Clear</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+				<canvas id="can" width="780" height="640">
+				</canvas>
+				</div>
+				<div class="col">
+					<strong>Commands</strong><br>
+					Space - Finish polygon<br>
+					Arrow keys - Move/transform object<br>
+					Tab - Change focus<br>
+					Enter - Toggle fill<br>
+					Comma - Send down one layer<br>
+					Period - Send up one layer<br>
+					Backspace - Delete object<br>
+				</div>
+			</div>
+		</div>
+		<script src="./graphics.js"></script>
+		<script src="./shapes.js"></script>
+		<script src="./paint.js"></script>
+		<script>
+			redrawCanvas();
+		</script>
+	</body>
+</html>
