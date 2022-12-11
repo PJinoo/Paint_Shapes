@@ -1,8 +1,8 @@
 # Paint_Shapes
-- computer_graphics homework #4
+- Computer_Graphics homework #4
 - 32191879 Deft of Software Park Jinoh
 # USAGE
-- download all package to .zip
+- Download all package to .zip
 - Execution paint.html
 
 # Description
